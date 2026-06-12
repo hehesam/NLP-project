@@ -1,0 +1,63 @@
+# =============================================================================
+# Datasets & confidential data  (NEVER commit — contains real university emails)
+# =============================================================================
+# Ignore everything under data/, but keep the empty folder skeleton (.gitkeep)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Defense-in-depth: never commit raw corpora anywhere in the tree
+*.csv
+*.jsonl
+*.pkl
+*.xlsx
+*.mbox
+*.eml
+
+# Email attachments (may contain personal files)
+**/attachments/
+
+# =============================================================================
+# Secrets & credentials
+# =============================================================================
+.env
+**/.env
+*.key
+*.key.pub
+*.pem
+credentials.json
+token.json
+
+# =============================================================================
+# Trained model artifacts (regenerate with 5_mvp_bot/train_models.py)
+# =============================================================================
+5_mvp_bot/models/
+*.joblib
+*.pt
+*.bin
+*.safetensors
+
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# =============================================================================
+# Removed sub-project (MVP Telegram bot) — folder kept only for a locked SSH key
+# =============================================================================
+5_mvp_bot/
+
+# =============================================================================
+# Editor / OS / tooling
+# =============================================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.sixth/
