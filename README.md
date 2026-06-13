@@ -18,12 +18,7 @@ NLP-project/
 │   ├── raw/               # IMAP export, filtered emails, attachments
 │   ├── annotation/        # Merged & cleaned LLM annotation CSVs
 │   ├── processed/         # gold_dataset.csv, frozen_dataset.csv
-│   └── labels/            # Per-model batch label files (batchNN_{ge,cl,gpt}.jsonl)
-└── docs/
-    ├── report/            # Deep-research background report (Markdown)
-    ├── proposal/          # Project proposal (PDF + DOCX)
-    ├── notes/             # Workflow notes, update logs, master prompts
-    └── obsidian/          # Obsidian knowledge-base vault
+│   └── labels/            # Per-model batch label files (batchNN_{ge,cl,gpt}.
 ```
 
 ---
